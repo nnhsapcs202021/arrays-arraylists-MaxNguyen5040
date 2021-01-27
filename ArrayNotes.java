@@ -40,10 +40,31 @@ public class ArrayNotes
          */
         GregorianCalendar[] calendars = new GregorianCalendar[12];
 
+
         for( GregorianCalendar calendar : calendars){
             System.out.println(calendar);
+
         }
 
+        for(int i = 0; i < calendars.length;i++){
+            calendars[i] = new GregorianCalendar(2021, i +1,1);
+
+        }
+
+
+        for( GregorianCalendar calendar : calendars){
+            System.out.println(calendar);
+
+        }
+
+        for(GregorianCalendar calendar : calendars){
+            calendar.add(GregorianCalendar.DAY_OF_MONTH,2);
+        }
+
+        for( GregorianCalendar calendar : calendars){
+            System.out.println(calendar);
+
+        }
 
     }
 
