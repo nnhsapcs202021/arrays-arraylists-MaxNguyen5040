@@ -3,6 +3,7 @@ import java.util.Arrays;
 public class ArrayMethods
 {
     private int[] values;
+    private int[] nums = new int[]{1,4,9,16,25};
     public ArrayMethods(int[] initialValues)
     {
         this.values = initialValues;
@@ -17,7 +18,12 @@ public class ArrayMethods
     }
     public void shiftRight()
     {
+        int temp = this.nums[this.nums.length-1];
+        for(int i = this.nums.length-1;i>0;i--){
+            this.nums[i] = this.nums[i-1];
 
+        }
+        this.nums[0] = temp;
     }
 
 
