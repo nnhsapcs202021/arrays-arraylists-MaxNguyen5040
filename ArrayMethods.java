@@ -12,10 +12,14 @@ public class ArrayMethods
     {
         System.out.println(Arrays.toString(this.values));
     }
+
     public void swapFirstAndLast()
     {
-
+        int num = this.nums[0];
+        nums[0] = this.nums[this.nums.length-1];
+        nums[this.nums.length-1] = num;
     }
+
     public void shiftRight()
     {
         int temp = this.nums[this.nums.length-1];
