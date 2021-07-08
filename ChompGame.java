@@ -9,7 +9,7 @@ public class ChompGame extends CharMatrix
   {
     super(board.numRows(), board.numCols(), 'x');
     this.board = board;
-    board.update(this);  
+    board.update(this);
   }
 
   // Returns true if row, col is out of bounds or the character
